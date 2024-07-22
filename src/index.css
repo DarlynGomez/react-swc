@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root,
+.app {
+    height: 100%;
+    width: 100%;
+    font-family: "Teachers", "sans-serif";
+    @apply text-black-100;
+}
+
+
+
+#navbar{
+    width: "100%";
+    background-color: "#835368";
+    position: "sticky";
+    top: "0";
+}
+.fixed-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* scrolling colors */
+  }
+
+  

@@ -1,0 +1,44 @@
+import { SelectedPage } from "@/shared/types"
+import { 
+    HomeModernIcon,
+    UserGroupIcon,
+    AcademicCapIcon,
+ } from "@heroicons/react/24/solid"
+import { motion } from "framer-motion";
+
+
+type Props = {
+    setSelectedPage: (value: SelectedPage) => void;
+}
+
+const Adopt = ( { setSelectedPage }: Props) => {
+    return <section
+    id="adopt"
+    className="mx-auto min-h-full w-5/6 py-20"
+    >
+        <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Adopt)} 
+        >
+        </motion.div>
+
+    
+
+        {/* main page */}
+        <div style={{
+            backgroundColor: "black"
+        }}>
+            <div style={{marginTop: "%",}}>
+                <div style={{
+                    backgroundColor: "blue",
+                    height: "20%",
+                    width: "100%",
+                }}>
+                    
+                </div>
+            </div>
+
+        </div>
+        
+    </section>
+}
+ 
+export default Adopt
